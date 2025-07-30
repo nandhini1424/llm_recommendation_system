@@ -28,7 +28,7 @@ It returns recommended courses in JSON format when you type a keyword related to
 
 Recommendation System/
 - ├── main.py                # FastAPI app (API layer)
-- ├── model_service.py       # ML logic: data loading, embedding, recommendation
+- ├── model.py       # ML logic: data loading, embedding, recommendation
 - ├── udemy_courses.csv      # Dataset (replace with your own if needed)
 - ├── course_embeddings.pkl  # Auto-generated after first run
 - └── requirements.txt       # Dependencies
