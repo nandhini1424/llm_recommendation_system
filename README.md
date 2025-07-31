@@ -36,21 +36,21 @@ Recommendation System/
 ## ⚙️ Installation
 
 ### Clone or download this repo
-cd "Recommendation System"
+```cd "Recommendation System"```
 
 ### (Optional) Create virtual environment
-python -m venv venv
+```python -m venv venv```
 ### Activate (Windows)
-.\venv\Scripts\activate
+```.\venv\Scripts\activate```
 
 ### Install required packages
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ## ▶️ Usage
 
 ### Run the FastAPI server:
 
-uvicorn main:app --reload
+```uvicorn main:app --reload```
 
 First time, you’ll see embeddings being computed (progress bar).From next time, they’ll be loaded instantly from course_embeddings.pkl.
 
@@ -59,7 +59,7 @@ First time, you’ll see embeddings being computed (progress bar).From next time
 ### Open:
 
 ### Swagger UI: 
-http://127.0.0.1:8000/docs
+```http://127.0.0.1:8000/docs```
 
 ### Example:
 
@@ -67,7 +67,7 @@ GET /recommend?query=python&top_k=5
 
 ### You’ll get JSON response:
 
-[
+```[
   {
     "id": 101,
     "title": "Python Basics",
@@ -78,14 +78,15 @@ GET /recommend?query=python&top_k=5
   },
   ...
 ]
+```
 
 ## 🛠 How to modify
 
 ### To change how text is used for similarity: 
-edit self.df["text"] in model.py
+edit ```self.df["text"] in model.py```
 
 ### To change the number of recommended courses: 
-adjust top_k
+adjust ```top_k```
 
 ## 📚 Dependencies
 
@@ -101,7 +102,7 @@ adjust top_k
 
 ### Install with:
 
-pip install fastapi uvicorn pandas sentence-transformers scikit-learn
+```pip install fastapi uvicorn pandas sentence-transformers scikit-learn```
 
 ## ✅ License
 
