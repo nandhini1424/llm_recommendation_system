@@ -104,7 +104,6 @@ adjust ```top_k```
 
 ```pip install fastapi uvicorn pandas sentence-transformers scikit-learn```
 
-## ✅ License
+## ✏️ Author
 
-Open source, for learning and research purposes.
-
+Built and documented by [nandhini1424](https://github.com/nandhini1424)
